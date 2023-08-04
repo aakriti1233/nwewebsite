@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Unleashing Awesomeness</title>
+    <style>
+        /* Custom mesmerizing styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            position: sticky; /* Make the header sticky */
+            top: 0; /* Stick it to the top of the page */
+            z-index: 100; /* Ensure it appears above other elements when scrolling */
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav li {
+            display: inline;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            font-size: 18px;
+        }
+        nav a:hover {
+            background-color: #444; /* Hover color for navigation links */
+        }
+        section {
+            text-align: center;
+            padding: 2rem;
+        }
+        footer {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        /* Custom contact form styles */
+        .contact-form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+        .contact-form h2 {
+            color: #444;
+            margin-bottom: 1rem;
+        }
+        .contact-form label {
+            display: block;
+            color: #444;
+            margin-bottom: 0.5rem;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+        .contact-form button {
+            background-color: #222;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 3px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #444;
+        }
+
+        /* Mobile responsive styles */
+        @media only screen and (max-width: 600px) {
+            header {
+                padding: 0.5rem;
+            }
+            nav a {
+                font-size: 16px;
+            }
+            .contact-form {
+                max-width: 100%;
+            }
+            /* Adjust image size in the slideshow for mobile */
+            #slideshow img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="intro">
+            <h1>I'M Aakriti Shrestha</h1>
+            <p>I'm from New-Baneshwor, Kathmandu, Nepal</p>
+            <div id="slideshow">
+                <img src="362922695_615568870705190_6681868657160021270_n.jpg" alt="Image 1">
+                <img src="362905303_615568900705187_2994466660280645372_n.jpg" alt="Image 2">
+                <img src="358146512_1538771516947384_4646799709694810778_n.jpg" alt="Image 3">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-content">
+            <h2>Age and DOB</h2>
+            <p>
+                Age: 15 Years.
+                DOB: 2065-04-10
+            </p>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="portfolio-items">
+            <h2>Class and Studies</h2>
+            <!-- Showcase your astonishing projects here -->
+            <div class="project">
+                <h3>Class: 10</h3>
+                <p>Section: A
+                </p>
+            </div>
+            <div class="project">
+                <h3>Qualities</h3>
+                <p>
+                    Intelligent,
+                    Helpful;
+                    Kind; 
+                </p>
+            </div>
+            <!-- Let your imagination run wild with more projects -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-form">
+            <h2>Reach Out and Inspire</h2>
+            <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Ignite the Spark</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Aakriti Shrestha. All rights unreserved.</p>
+    </footer>
+
+    <script>
+        // Enchanting the navigation links with smooth scrolling
+        const navLinks = document.querySelectorAll('nav a');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', e => {
+                e.preventDefault();
+                const target = document.querySelector(e.target.getAttribute('href'));
+                window.scrollTo({
+                    top: target.offsetTop,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        
+    </script>
+</body>
+</html>
